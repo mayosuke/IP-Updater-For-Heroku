@@ -27,11 +27,11 @@ dozens_ip_updater/config.pyを編集し、Herokuにデプロイすることで�
 * Heroku上にアプリを作成(fooname部分は任意のアプリ名)  
     * `heroku create fooname`  
 * HerokuにMemcachierのAddon(無料)を追加  
-    * `heroku addons:add memcachier:dev --app fooname`  
+    * `heroku addons:create memcachier:dev --app fooname`  
 * Herokuのタイムゾーンを設定  
     * `heroku config:add TZ=Asia/Tokyo --app fooname`   
 * HerokuにLog用のAddon(無料)追加  
-    * `heroku addons:add papertrail --app fooname`   
+    * `heroku addons:create papertrail --app fooname`   
 * Herokuにアプリをデプロイ  
     * `git push heroku master`  
 * Heroku上のアプリを開始  
